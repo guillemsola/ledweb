@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Icons</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/data.js"></script>
+        <script src="js/icons.js"></script>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <div id="message" onkeypress="return myKeyPress(event)" contenteditable></div>
+            <a href="javascript:void(0);" onclick="sendMessage();" class="myButton"><< Enviar >></a>
+        </div>
+        <div id="iconsList"></div>
+    </body>
+    <script type="text/javascript">
+        var i = 0;
+        icons.forEach(icon => {
+            var canvas = paintIconButton(icon, i);
+            i++;
+        })
+    </script>
+    <script type="text/javascript">
+    </script>
+</html>
